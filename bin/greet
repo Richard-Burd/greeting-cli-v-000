@@ -3,7 +3,7 @@ require_relative "../lib/greeting.rb"
 
 # code your CLI here!
 puts "Hi! I'm HAL, what's your name?"
-  if gets.is_an_int
+  if gets.is_a? Integer
     name = gets.to_i
   else
     name = gets.strip
