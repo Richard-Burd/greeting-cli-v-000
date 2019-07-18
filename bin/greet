@@ -3,5 +3,9 @@ require_relative "../lib/greeting.rb"
 
 # code your CLI here!
 puts "Hi! I'm HAL, what's your name?"
-name = gets.to_i
+  if gets.in_an_int
+    name = gets.to_i
+  else 
+    name = gets.strip 
+  end
 greeting(name)
